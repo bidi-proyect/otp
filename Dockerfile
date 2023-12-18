@@ -1,7 +1,10 @@
 # syntax=docker/dockerfile:1
 
+FROM maven:3.8-jdk-17 AS build
+COPY . .
+RUN mvn clean package -DskipTests
+
 FROM eclipse-temurin:17-jdk-jammy
+COPY --from=build target/otp-1.0.0-RELEASE.jar app.jar
 EXPOSE 8080
-ARG JAR_FILE=target/otp-1.0.0-RELEASE.jar
-ADD target/otp-1.0.0-RELEASE.jar app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
