@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1349px;
+    height: 617px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 50%;
+    height: 85%;
+    background-color: #008D89;
+    font-family: 'Inter', sans-serif;
+}
+
+.img-container {
+    width: 100%;
+    height: 50%;
+}
+
+.p-container {
+    width: 50%;
+    height: 50%;
+}
+
+.desc {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+}
+.code {
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0.5em;
+    text-shadow:  4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    width: 50%;
+    height: 15%;
+    background-color: #222222;
+    font-family: 'Kanit', sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}

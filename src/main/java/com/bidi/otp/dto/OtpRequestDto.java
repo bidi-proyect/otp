@@ -1,24 +1,20 @@
 package com.bidi.otp.dto;
 
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import javax.persistence.Column;
-import javax.validation.constraints.Pattern;
-import java.time.LocalDateTime;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Builder
 public class OtpRequestDto {
+    @NotNull(message = "userId cannot be null.")
+    private String userId;
+    @NotNull(message = "Option cannot be null.")
     private int option;
     private String phoneNumber;
     private String email;
-
-
 }

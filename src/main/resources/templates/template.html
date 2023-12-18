@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kanit&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kanit&display=swap');
+    </style>
+</head>
+
+<body style="width: 40%; height: 400px; margin: 0; padding: 0; display: table; font-family: 'Inter', sans-serif;">
+
+<table role="presentation"
+       style="width: 100%; height: 100%; background-color: #008D89; font-family: 'Inter', sans-serif;">
+    <tr>
+        <td style="width: 100%; height: 100%; display: table-cell; text-align: center; vertical-align: middle;">
+            <h1 style="font-weight: 700; font-size: 8em; color: #222222; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2); margin: 0; padding: 0;">
+                bidi</h1>
+        </td>
+    </tr>
+    <tr style="width: 100%; height: 50%;">
+        <td style="width: 100%; height: 50%; display: table-cell; text-align: center; vertical-align: middle;">
+            <p style="margin: 0 0 1em 0; padding: 0; color: black; text-align: center; font-size: 1.5em;">
+                Para confirmar tu cuenta, digita el siguiente código:
+            </p>
+            <p style="margin: 0 0 1em; padding: 0; color: white; font-size: 2em; font-weight: 700; letter-spacing: 0.5em; text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);">
+                <span th:text="${otpCode}"></span>
+            </p>
+        </td>
+    </tr>
+</table>
+<table role="presentation"
+       style="width: 100%; height: 15%; background-color: #222222; display: table; font-family: 'Kanit', sans-serif; color: #FFFFFF; font-size: 1.5em;">
+    <tr style="width: 100%; height: 15%; display: table-row;">
+        <td style="width: 100%; height: 15%; display: table-cell; text-align: center; vertical-align: middle; padding: 10px;">
+            <p>Equipo bidi</p>
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
